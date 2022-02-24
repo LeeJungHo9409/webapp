@@ -1,0 +1,117 @@
+@charset "EUC-KR";
+
+/* CSS 초기화 */
+article, aside, audio, 
+blockquote, body, button, 
+canvas, caption, cite, code, 
+dd, del, details, div, dl, dt,
+em,
+fieldset, figcaption, figure, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+iframe, img, ins, 
+legend, li, 
+mark,
+nav,
+ol,
+p, pre,
+q,
+section, small, span, strong, sub, summary, sup,
+table, tbody, td, tfoot, th, thead, time, tr,
+ul,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* 문서 전체 CSS 적용 */
+body {
+    line-height: 1;
+}
+
+/* 새로운 HTML5 태그 IE 9이하에서 정상적으로 작동하도옥 설정 */
+article, aside,
+details,
+figcaption, figure, footer,
+header, hgroup,
+nav,
+section {
+    display: block;
+}
+
+/* List 요소 */
+li,
+ul {
+    list-style: none;
+}
+
+/* A 요소 */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    vertical-align: baseline;
+    background: none;
+}
+
+/* img 요소 */
+img {
+    vertical-align: top;
+}
+
+/* hr 요소 */
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* button 요소 */
+button {
+    background: none;
+}
+
+/* 박스사이징 */
+* {
+    box-sizing: border-box;
+}
+
+/* 플롯 해제 */
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 마진값 초기화 */
+.mt {
+    margin-top: 0 !important;
+}
+.mr {
+    margin-right: 0 !important;
+}
+.mb {
+    margin-bottom: 0 !important;
+}
+.ml {
+    margin-left: 0 !important;
+}
+
+/* 패딩값 초기화 */
+.pt {
+    padding-top: 0 !important;
+}
+.pr {
+    padding-right: 0 !important;
+}
+.pb {
+    padding-bottom: 0 !important;
+}
+.pl {
+    padding-left: 0 !important;
+}

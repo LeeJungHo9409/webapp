@@ -1,0 +1,323 @@
+@charset "EUC-KR";
+
+/*
+	https://ldrerin.tistory.com/397 (에니메이션 예제 참고 사이트)
+	https://freesvg.org/search?query=small%20bird&q=small%20bird&page=2 (svg 참고 사이트)
+*/
+
+/*font*/
+
+/*초콜릿*/
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*카페24 써라운드에어*/
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*프리텐다드*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'children_font';
+    src: url('./font/ACC_Children_handwriting_TTF/ACC_Children_sky_clear.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'universe_font';
+    src: url('./font/Y_universe_FONT/YUniverse-B.ttf') format('truetype');
+}
+
+/*font*/
+
+
+/* 공용 */
+
+.text_right{
+	text-align: right;
+}
+
+.w90p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p40px{
+	padding: 40px;
+}
+
+.flexCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+
+h2{
+    font-size: 4em;
+    font-family: 'universe_font';
+}
+
+#wrap{
+	width: 100%;
+	height: 100%;
+}
+
+.material-icons {
+	font-size: 0.8rem;
+}
+
+/* nav */
+header{
+	font-family: 'ghanachoco';
+}
+/* nav */
+
+/* First Page*/
+#title{
+	
+	width: 100%;
+	min-height: 980px;
+	height: auto;
+	
+	position:fixed;
+	z-index: -1;
+	
+    box-sizing: border-box;
+    
+    color: white;
+    
+    background-image: url('../IMG/mainBack.jpg');
+}
+
+#title > *{
+	/* font */
+	font-family: 'ghanachoco';
+	color: #3E3A40;
+}
+
+#title #main_title{
+	position:fixed;
+}
+
+#title #main_title > h1{
+	
+    text-align: center;
+    
+    /* font */
+    font-size: 8em;    
+}
+
+#title #main_title p{
+	text-align: right;
+}
+
+#title #topSide{
+	
+	padding-bottom: 0;
+
+	color: white;
+	font-family: 'children_font';
+	
+}
+
+#title #topSide > *{
+	opacity : 0;
+	font-size: 3em;
+}
+
+#title #gnb{
+	
+    padding-bottom: 0;
+    padding-top: 10%;
+    
+    /* font */
+    font-size: 2em;
+}
+
+#title #gnb ul{
+    
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+/* First Page*/
+
+/* First Page Sub */
+#empty{
+	min-height: 3680px;
+}
+/* First Page Sub */
+
+/* main */
+#main{
+	width: 100%;
+	background-color: white;
+}
+/* main_contant */
+#main_contant{
+	width: 100%;	
+	height: auto;
+}
+
+#main_contant > *{
+	min-height: 950px;
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+
+/* identity */
+
+#identity{
+	
+	background-color: #e4ebf0;
+	
+	display: flex;
+	justify-content: center;
+}
+
+#identity #i_img{
+	width: 50%;
+	
+	position: relative;
+	top: 130px;
+	left: 10%;
+}
+
+#identity #i_img > img{
+	width:70%;
+	
+	border: 6px solid #f8ffff;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+#identity #i_img > h2{
+	width: 80%;
+	text-align: right;
+}
+
+#identity #i_text_ul{
+	width: 68%;
+	font-size: 1.3rem;
+}
+
+#identity #i_text_ul > li:first-child{
+	width: 68%;
+	padding-bottom: 8%;
+}
+
+#identity #i_text_ul table tr > *{
+	padding: 10px;
+	font-family: 'Cafe24SsurroundAir';
+}
+
+#identity #i_text_ul > li{
+	
+	font-size: 1.5em;
+	
+	padding: 10px 0 10px 0;
+}
+
+#identity #i_text_ul #i_icons{
+	
+	width:70%;
+	
+	padding-top: 10%;
+}
+
+#identity #i_text_ul #i_icons ul{
+	
+	display: flex;
+	justify-content: space-between;
+}
+#identity #i_text_ul #i_icons ul > li{
+	
+	padding: 10px;
+	text-align: center;
+}
+
+#identity #i_text_ul #i_icons ul li > i{
+	width: 100px;
+	padding-bottom: 20px;
+}
+
+#identity #i_text_ul #i_icons ul li p{
+	font-size: 1.3em;
+	
+	font-family:'universe_font';
+}
+
+/* identity */
+
+/* features */
+
+#features > *{
+	border: solid 1px black;
+}
+
+#features #i_title{
+	width: 100%;
+	text-align: center;
+}
+
+#features #i_imgBox div{
+	
+	text-align: center;
+}
+
+#features #i_imgBox > div{
+	display: flex;
+}
+
+#features #i_imgBox .icon{
+	width: 30%;
+}
+
+#features #i_imgBox div > img{
+	width: 100px;
+}
+
+#features #i_imgBox .bar{
+	width: 70%;
+}
+
+#features #i_imgBox .bar > .progress{
+	width: 100%;
+}
+
+#features #i_contant{
+	width: 45%;
+}
+
+#features hr{
+	border: solid 1px gray;
+}
+/* features */
+
+/* history */
+
+/* history */
+/* main_contant */
