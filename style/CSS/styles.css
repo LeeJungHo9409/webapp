@@ -11609,3 +11609,7 @@ header.masthead hr, header.masthead p{
 	max-height: 100%;
 }
 
+.fade {
+  position: relative;
+}
+
